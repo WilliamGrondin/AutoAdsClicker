@@ -17,7 +17,7 @@ sleep 5
 url="http://materialdesign.fr"
 chromium-browser --user-data-dir="$BASEDIR/user1/" --display=:1 "$url" &
 sleep 40
-ads=RANDOM%4
+ads=$((RANDOM%4))
 if [ "$ads" -eq "0" ]
 then
 echo "ads 0"
